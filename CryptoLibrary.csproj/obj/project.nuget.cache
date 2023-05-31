@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GcudV95Z/tQG5L1vN7Xv9+YBwppmrdgkI+9Dka1DaOBtY3m8RbKxwNtkAxUSS1i49Lf8wY9X9LLNzir6+EuC/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ebcak\\OneDrive\\Masaüstü\\Cryopthmw\\ce100-hw4-eray-burak-cakir\\ce100-hw4-eray-burak-cakir\\CryptoLibrary.csproj\\CryptoLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ebcak\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
