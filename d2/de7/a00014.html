@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CE100 Algorithms and Programming II HW4: Algorithms Namespace Reference</title>
+<title>CE100 Algorithms and Programming II HW4: Algorithms.AES Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -84,36 +84,522 @@ $(document).ready(function(){initNavTree('d2/de7/a00014.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="../../da/d45/a00011.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Algorithms Namespace Reference</div>  </div>
+<div class="title">Algorithms.AES Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Provides methods for file transformation and encryption.  
+ <a href="../../d2/de7/a00014.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d61/a00031.html">AES</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides methods for file transformation and encryption.  <a href="../../df/d61/a00031.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8c/a00035.html">CRC32</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/d8c/a00035.html" title="CRC32 class for calculating CRC32 hash value.">CRC32</a> class for calculating <a class="el" href="../../d4/d8c/a00035.html" title="CRC32 class for calculating CRC32 hash value.">CRC32</a> hash value.  <a href="../../d4/d8c/a00035.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de7/a00039.html">MD5Helper</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d42/a00043.html">DESHelper</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2d/a00047.html">HOTP</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abd11675ffdefccc944aa997659905695"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#abd11675ffdefccc944aa997659905695">ConvertToBinary</a> (string sourceFile, string destinationFile)</td></tr>
+<tr class="memdesc:abd11675ffdefccc944aa997659905695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a file to binary format.  <a href="../../d2/de7/a00014.html#abd11675ffdefccc944aa997659905695">More...</a><br /></td></tr>
+<tr class="separator:abd11675ffdefccc944aa997659905695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68883a386bad97e0b49fcc001f240ddc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#a68883a386bad97e0b49fcc001f240ddc">TransformFile</a> (string sourceFilePath, string destFilePath, int operation)</td></tr>
+<tr class="memdesc:a68883a386bad97e0b49fcc001f240ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a file based on the specified operation.  <a href="../../d2/de7/a00014.html#a68883a386bad97e0b49fcc001f240ddc">More...</a><br /></td></tr>
+<tr class="separator:a68883a386bad97e0b49fcc001f240ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad909f1d1343c495b1686f61c6b69b20d"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#ad909f1d1343c495b1686f61c6b69b20d">CalSha1</a> (byte[] data)</td></tr>
+<tr class="memdesc:ad909f1d1343c495b1686f61c6b69b20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the SHA1 hash of the provided data.  <a href="../../d2/de7/a00014.html#ad909f1d1343c495b1686f61c6b69b20d">More...</a><br /></td></tr>
+<tr class="separator:ad909f1d1343c495b1686f61c6b69b20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a05d84e0c22adc09ee4709ce8a0f7a"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#a11a05d84e0c22adc09ee4709ce8a0f7a">CalSha256</a> (byte[] data)</td></tr>
+<tr class="memdesc:a11a05d84e0c22adc09ee4709ce8a0f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the SHA256 hash of the provided data.  <a href="../../d2/de7/a00014.html#a11a05d84e0c22adc09ee4709ce8a0f7a">More...</a><br /></td></tr>
+<tr class="separator:a11a05d84e0c22adc09ee4709ce8a0f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a6f3657cecb4f891ff3bb1281545efb79"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#a6f3657cecb4f891ff3bb1281545efb79">BufferSet</a> (byte[] sha1Hash, byte[] fileData, byte[] sha256Hash)</td></tr>
+<tr class="memdesc:a6f3657cecb4f891ff3bb1281545efb79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the buffer with the specified data.  <a href="../../d2/de7/a00014.html#a6f3657cecb4f891ff3bb1281545efb79">More...</a><br /></td></tr>
+<tr class="separator:a6f3657cecb4f891ff3bb1281545efb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778e6cc9a7486abeac6ec55dd161ae7c"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#a778e6cc9a7486abeac6ec55dd161ae7c">EncData</a> (byte[] data)</td></tr>
+<tr class="memdesc:a778e6cc9a7486abeac6ec55dd161ae7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts the provided data using <a class="el" href="../../d2/de7/a00014.html" title="Provides methods for file transformation and encryption.">AES</a> encryption algorithm.  <a href="../../d2/de7/a00014.html#a778e6cc9a7486abeac6ec55dd161ae7c">More...</a><br /></td></tr>
+<tr class="separator:a778e6cc9a7486abeac6ec55dd161ae7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6057ec90037ce1367840167702ad0a92"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#a6057ec90037ce1367840167702ad0a92">DecData</a> (byte[] data)</td></tr>
+<tr class="memdesc:a6057ec90037ce1367840167702ad0a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts the provided data using <a class="el" href="../../d2/de7/a00014.html" title="Provides methods for file transformation and encryption.">AES</a> encryption algorithm.  <a href="../../d2/de7/a00014.html#a6057ec90037ce1367840167702ad0a92">More...</a><br /></td></tr>
+<tr class="separator:a6057ec90037ce1367840167702ad0a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe0e5820eccb0f9fb77add6939a3025"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#a9fe0e5820eccb0f9fb77add6939a3025">CompHash</a> (byte[] hash1, byte[] hash2)</td></tr>
+<tr class="memdesc:a9fe0e5820eccb0f9fb77add6939a3025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two hash values for equality.  <a href="../../d2/de7/a00014.html#a9fe0e5820eccb0f9fb77add6939a3025">More...</a><br /></td></tr>
+<tr class="separator:a9fe0e5820eccb0f9fb77add6939a3025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a296144e737b8a371ed9f9a5fcef59c50"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#a296144e737b8a371ed9f9a5fcef59c50">BytesBlockSize</a> = 16</td></tr>
+<tr class="separator:a296144e737b8a371ed9f9a5fcef59c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4226113feb0d463733d40bca0b135a6"><td class="memItemLeft" align="right" valign="top">static readonly byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/a00014.html#ab4226113feb0d463733d40bca0b135a6">Key</a> = Encoding.UTF8.GetBytes(&quot;mysecretkey12345&quot;)</td></tr>
+<tr class="separator:ab4226113feb0d463733d40bca0b135a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eray Burak CAKIR And Suleyman Mert ALMALI </dd></dl>
-</div></div><!-- contents -->
+<div class="textblock"><p>Provides methods for file transformation and encryption. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6f3657cecb4f891ff3bb1281545efb79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3657cecb4f891ff3bb1281545efb79">&#9670;&nbsp;</a></span>BufferSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] Algorithms.AES.BufferSet </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>sha1Hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>fileData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>sha256Hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets up the buffer with the specified data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sha1D</td><td>The SHA1 hash of the file data.</td></tr>
+    <tr><td class="paramname">fileData</td><td>The file data.</td></tr>
+    <tr><td class="paramname">sha256D</td><td>The SHA256 hash of the file data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The buffer containing the specified data.</dd></dl>
+
+<p class="reference">References <a class="el" href="../../d2/de7/a00014.html#a296144e737b8a371ed9f9a5fcef59c50">Algorithms.AES.BytesBlockSize</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/de7/a00014.html#a68883a386bad97e0b49fcc001f240ddc">Algorithms.AES.TransformFile()</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d2/de7/a00014_a6f3657cecb4f891ff3bb1281545efb79_icgraph.png" border="0" usemap="#ad2/de7/a00014_a6f3657cecb4f891ff3bb1281545efb79_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ad909f1d1343c495b1686f61c6b69b20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad909f1d1343c495b1686f61c6b69b20d">&#9670;&nbsp;</a></span>CalSha1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] Algorithms.AES.CalSha1 </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the SHA1 hash of the provided data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data to be hashed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The SHA1 hash value.</dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/de7/a00014.html#a68883a386bad97e0b49fcc001f240ddc">Algorithms.AES.TransformFile()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d2/de7/a00014_ad909f1d1343c495b1686f61c6b69b20d_icgraph.png" border="0" usemap="#ad2/de7/a00014_ad909f1d1343c495b1686f61c6b69b20d_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a11a05d84e0c22adc09ee4709ce8a0f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a05d84e0c22adc09ee4709ce8a0f7a">&#9670;&nbsp;</a></span>CalSha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] Algorithms.AES.CalSha256 </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the SHA256 hash of the provided data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data to be hashed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The SHA256 hash value.</dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/de7/a00014.html#a68883a386bad97e0b49fcc001f240ddc">Algorithms.AES.TransformFile()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d2/de7/a00014_a11a05d84e0c22adc09ee4709ce8a0f7a_icgraph.png" border="0" usemap="#ad2/de7/a00014_a11a05d84e0c22adc09ee4709ce8a0f7a_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a9fe0e5820eccb0f9fb77add6939a3025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe0e5820eccb0f9fb77add6939a3025">&#9670;&nbsp;</a></span>CompHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Algorithms.AES.CompHash </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>hash1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>hash2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares two hash values for equality. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hash1</td><td>The first hash value.</td></tr>
+    <tr><td class="paramname">hash2</td><td>The second hash value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the hash values are equal, otherwise false.</dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/de7/a00014.html#a68883a386bad97e0b49fcc001f240ddc">Algorithms.AES.TransformFile()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d2/de7/a00014_a9fe0e5820eccb0f9fb77add6939a3025_icgraph.png" border="0" usemap="#ad2/de7/a00014_a9fe0e5820eccb0f9fb77add6939a3025_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="abd11675ffdefccc944aa997659905695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd11675ffdefccc944aa997659905695">&#9670;&nbsp;</a></span>ConvertToBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Algorithms.AES.ConvertToBinary </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sourceFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>destinationFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a file to binary format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceFile</td><td>The path of the source file.</td></tr>
+    <tr><td class="paramname">destinationFile</td><td>The path of the destination file.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6057ec90037ce1367840167702ad0a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6057ec90037ce1367840167702ad0a92">&#9670;&nbsp;</a></span>DecData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] Algorithms.AES.DecData </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrypts the provided data using <a class="el" href="../../d2/de7/a00014.html" title="Provides methods for file transformation and encryption.">AES</a> encryption algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data to be decrypted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The decrypted data.</dd></dl>
+
+<p class="reference">References <a class="el" href="../../d2/de7/a00014.html#a296144e737b8a371ed9f9a5fcef59c50">Algorithms.AES.BytesBlockSize</a>, and <a class="el" href="../../d2/de7/a00014.html#ab4226113feb0d463733d40bca0b135a6">Algorithms.AES.Key</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/de7/a00014.html#a68883a386bad97e0b49fcc001f240ddc">Algorithms.AES.TransformFile()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d2/de7/a00014_a6057ec90037ce1367840167702ad0a92_icgraph.png" border="0" usemap="#ad2/de7/a00014_a6057ec90037ce1367840167702ad0a92_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a778e6cc9a7486abeac6ec55dd161ae7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a778e6cc9a7486abeac6ec55dd161ae7c">&#9670;&nbsp;</a></span>EncData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] Algorithms.AES.EncData </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Encrypts the provided data using <a class="el" href="../../d2/de7/a00014.html" title="Provides methods for file transformation and encryption.">AES</a> encryption algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data to be encrypted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The encrypted data.</dd></dl>
+
+<p class="reference">References <a class="el" href="../../d2/de7/a00014.html#a296144e737b8a371ed9f9a5fcef59c50">Algorithms.AES.BytesBlockSize</a>, and <a class="el" href="../../d2/de7/a00014.html#ab4226113feb0d463733d40bca0b135a6">Algorithms.AES.Key</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/de7/a00014.html#a68883a386bad97e0b49fcc001f240ddc">Algorithms.AES.TransformFile()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d2/de7/a00014_a778e6cc9a7486abeac6ec55dd161ae7c_icgraph.png" border="0" usemap="#ad2/de7/a00014_a778e6cc9a7486abeac6ec55dd161ae7c_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a68883a386bad97e0b49fcc001f240ddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68883a386bad97e0b49fcc001f240ddc">&#9670;&nbsp;</a></span>TransformFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Algorithms.AES.TransformFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sourceFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>destFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>operation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transforms a file based on the specified operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceFilePath</td><td>The path of the source file.</td></tr>
+    <tr><td class="paramname">destFilePath</td><td>The path of the destination file.</td></tr>
+    <tr><td class="paramname">operation</td><td>The operation to be performed (0 for decryption, 1 for encryption).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="../../d2/de7/a00014.html#a6f3657cecb4f891ff3bb1281545efb79">Algorithms.AES.BufferSet()</a>, <a class="el" href="../../d2/de7/a00014.html#ad909f1d1343c495b1686f61c6b69b20d">Algorithms.AES.CalSha1()</a>, <a class="el" href="../../d2/de7/a00014.html#a11a05d84e0c22adc09ee4709ce8a0f7a">Algorithms.AES.CalSha256()</a>, <a class="el" href="../../d2/de7/a00014.html#a9fe0e5820eccb0f9fb77add6939a3025">Algorithms.AES.CompHash()</a>, <a class="el" href="../../d2/de7/a00014.html#a6057ec90037ce1367840167702ad0a92">Algorithms.AES.DecData()</a>, and <a class="el" href="../../d2/de7/a00014.html#a778e6cc9a7486abeac6ec55dd161ae7c">Algorithms.AES.EncData()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d2/de7/a00014_a68883a386bad97e0b49fcc001f240ddc_cgraph.png" border="0" usemap="#ad2/de7/a00014_a68883a386bad97e0b49fcc001f240ddc_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a296144e737b8a371ed9f9a5fcef59c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296144e737b8a371ed9f9a5fcef59c50">&#9670;&nbsp;</a></span>BytesBlockSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Algorithms.AES.BytesBlockSize = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/de7/a00014.html#a6f3657cecb4f891ff3bb1281545efb79">Algorithms.AES.BufferSet()</a>, <a class="el" href="../../d2/de7/a00014.html#a6057ec90037ce1367840167702ad0a92">Algorithms.AES.DecData()</a>, and <a class="el" href="../../d2/de7/a00014.html#a778e6cc9a7486abeac6ec55dd161ae7c">Algorithms.AES.EncData()</a>.</p>
+
+</div>
+</div>
+<a id="ab4226113feb0d463733d40bca0b135a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4226113feb0d463733d40bca0b135a6">&#9670;&nbsp;</a></span>Key</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly byte [] Algorithms.AES.Key = Encoding.UTF8.GetBytes(&quot;mysecretkey12345&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d2/de7/a00014.html#a6057ec90037ce1367840167702ad0a92">Algorithms.AES.DecData()</a>, and <a class="el" href="../../d2/de7/a00014.html#a778e6cc9a7486abeac6ec55dd161ae7c">Algorithms.AES.EncData()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>CryptoLibrary.csproj/<a class="el" href="../../d7/d46/a00002.html">Algorithms.cs</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d2/de7/a00014.html">Algorithms</a></li>
-    <li class="footer">Generated on Wed May 31 2023 21:59:20 for CE100 Algorithms and Programming II HW4 by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="../../dd/dad/a00005.html">Algorithms</a></li><li class="navelem"><a class="el" href="../../d2/de7/a00014.html">AES</a></li>
+    <li class="footer">Generated on Fri Jun 2 2023 21:57:13 for CE100 Algorithms and Programming II HW4 by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

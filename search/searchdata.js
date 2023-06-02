@@ -1,11 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "._abcdeghkmt",
-  1: "acdhm",
+  0: "abcdeghkt",
+  1: "ah",
   2: "a",
-  3: ".ac",
+  3: "a",
   4: "bcdegt",
-  5: "_bckm"
+  5: "bk"
 };
 
 var indexSectionNames =
